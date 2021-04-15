@@ -53,9 +53,9 @@
        }
        
        if($i===0)    {$html  .= ;   //"<a href='"   . $scan[$i] . "'><div class='col-lg-6 place'>" . $nadpis . "</div></a>";  //составляем очередную строку ХТМЛ для "."    
-       }elseif($i===1){$html .= "<a href='"   . $scan[$i] . "'><div class='col-lg-6 place'>" . $nadpis . "</div></a>";  //составляем очередную строку ХТМЛ для ".."
+       }elseif($i===1){$html .= "<a href='"   . $scan[$i] . "'><div class='col-lg-12 place'>" . $nadpis . "</div></a>";  //составляем очередную строку ХТМЛ для ".."
        }else{
-      if(!disabled($scan[$i])) $html                 .= "<a href='" . $scan[$i] . "'><div class='col-lg-2 col-md-3 col-sm-4 place'>" . $nadpis . "</div></a>" ;                  // Собираем html строку из содержимого.
+      if(!disabled($scan[$i])) $html                 .= "<a href='" . $scan[$i] . "'><div class='col-lg-1 col-md-2 col-sm-3 place'>" . $nadpis . "</div></a>" ;                  // Собираем html строку из содержимого.
        }
     }  
     $html    .= "</div></div>";
