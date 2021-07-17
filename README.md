@@ -5,7 +5,9 @@ The era of baroque on the Internet is coming to an end. Our world is now enterin
 The typical starting method for this is BMI internet minimalism technology. BMI is a web application development method that assigns a minimum value to a form and, on the contrary, assigns a maximum value to the content. Ideally, the entire website should be one index.php file.
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Here we offer several types of index.php site files, according to the version plan below.
+
 1 Version 1.1.xxx - Simplest Single File Web Application (SFWA). This app can scan the current directory and publish its contents with standard clean download links. This version can include up to 999 different graphical and functional views. Variants of this version:
+
 1.a There is only one functional index.php file on the current host. All other host content is data.
 1.b Including other external resources available from remote websites (Bootstrap, JQueries and others, e.g. own centralized sources and resources)
 
@@ -15,3 +17,4 @@ Here we offer several types of index.php site files, according to the version pl
 
 5 Version 2.x.xxx: the main application file index.php, in addition, can include up to 10 other files in only one Single Web Site Directory SWSD on a current host. This version of the IMT web application is designed to create web applications completely independent of external resources. 
 The typing of the second number in this version is similar to versions 1.x.xxx
+6 Version 3.xxx include the autentification process. This option  closes content of the directory from foriners who do not registered at all. See detailed comment in the file (200 rows of php-    script)     
