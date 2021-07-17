@@ -17,4 +17,6 @@ Here we offer several types of index.php site files, according to the version pl
 
 5 Version 2.x.xxx: the main application file index.php, in addition, can include up to 10 other files in only one Single Web Site Directory SWSD on a current host. This version of the IMT web application is designed to create web applications completely independent of external resources. 
 The typing of the second number in this version is similar to versions 1.x.xxx
+
+
 6 Version 3.xxx include the autentification process. This option  closes content of the directory from foriners who do not registered at all. See detailed comment in the file (200 rows of php-    script)     
