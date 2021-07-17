@@ -1,7 +1,7 @@
 # -Internet-Minimalism-Technology
-The new era of Internet websites Open Sourse Transparent Development Standard. The standard without any noninformation,  hidden options. Only usefull information content element could be placed on a host of website.
+The new era of Computer's Net (Internet www. and more prefered Externet exnet.) is here! The free http-sites with Open Sourse Transparent Development Standard is ready. This standard is without any noninformation,  hidden options. Only usefull information content element could be placed on a host of website. This standart is good for publish the content in the relative slow computers in the Externet. We completed resourses for leave the internal computer's net of corp. ICANN  - www - Internet and go to the Free Open net - Externet. 
 ----------------------------------------------
-The era of baroque on the Internet is coming to an end. Our world is now entering a new era of classic interaction between form and content of websites.
+The era of baroque in the computer's net www (internet owned by corp. ICANN) is coming to the end. Our world is now entering a new era of classic interaction between form and content of websites.
 The typical starting method for this is BMI internet minimalism technology. BMI is a web application development method that assigns a minimum value to a form and, on the contrary, assigns a maximum value to the content. Ideally, the entire website should be one index.php file.
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Here we offer several types of index.php site files, according to the version plan below.
