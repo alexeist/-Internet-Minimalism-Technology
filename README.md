@@ -6,17 +6,17 @@ The typical starting method for this is BMI internet minimalism technology. BMI 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Here we offer several types of index.php site files, according to the version plan below.
 
-1 Version 1.1.xxx - Simplest Single File Web Application (SFWA). This app can scan the current directory and publish its contents with standard clean download links. This version can include up to 999 different graphical and functional views. Variants of this version:
+1 Version 1.xxx - Simplest Single File Externet Application (SFEA). This app can scan the current directory and publish its contents with standard clean download links. This version can include up to 999 different graphical and functional views. Variants of this version:
 
 1.a There is only one functional index.php file on the current host. All other host content is data.
 1.b Including other external resources available from remote websites (Bootstrap, JQueries and others, e.g. own centralized sources and resources)
 
-2 Version 1.2.xxx: all functionality and options of version 1.1xxx plus creation of icons for images. MiniSite adapted for image galleries
-3 Version 1.3.xxx: all functionality and options of version 1.1xxx plus creation of icons for images. MiniSite adapted for audio / video collections
-4 Version 1.4.xxx: all functionality and options of version 1.1xxx 1.2xxx 1.3xxx with automatic differentiation of content types
+2 Version 1.2xx: all functionality and options of version 1.1xxx plus creation of icons for images. This version uses external DB for safe the details of graphycal dezigne. MiniSite adapted for image galleries
+3 Version 1.3xx: all functionality and options of version 1.1xxx plus creation log-file with details about trafic. MiniSite adapted for mix / audio / video collections
+4 Version 1.4.xxx: all functionality and options of version 1.1xxx 1.2xxx 1.3xxx with automatic differentiation of content types, logging trafic +
 
 5 Version 2.x.xxx: the main application file index.php, in addition, can include up to 10 other files in only one Single Web Site Directory SWSD on a current host. This version of the IMT web application is designed to create web applications completely independent of external resources. 
 The typing of the second number in this version is similar to versions 1.x.xxx
 
 
-6 Version 3.xxx include the autentification process. This option  closes content of the directory from foriners who do not registered at all. See detailed comment in the file (200 rows of php-    script)     
+6 Version 3.xxx include the Authentication users and spam-filter procedurs. This option  closes content of the directory from foriners who do not registered at all. See detailed comment in the file (200 rows of php-script)     
