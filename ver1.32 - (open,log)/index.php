@@ -14,14 +14,14 @@ Autopublicator v 1.32 Open. Автор Алекс Эйст 2021 aekap ITC Пож
 *  1.5 $enabled_extentions                                                       // при использовании $mode = ENABLED_EXTENTIONS
 *  1.6 $disabled_extentions                                                      // при использовании $mode = DISABLED_EXTENTIONS
 * 2
-*  2.1 Если вы хотите отключить все и включить только несколько расширений файлов для публикации, используйте режим EXTENTION_ENABLED и отредактируйте переменную $ enabled _ extentions
-*  2.2 Если вы предпочитаете включить и отключить только несколько расширений файлов для публикации, используйте режим EXTENTION_DISABLED и отредактируйте переменную $ disabled _ extentions
+*  2.1 Если вы хотите отключить все и включить только несколько расширений файлов для публикации, используйте режим EXTENSION_ENABLED и отредактируйте переменную $ enabled _ extentions
+*  2.2 Если вы предпочитаете включить и отключить только несколько расширений файлов для публикации, используйте режим EXTENSION_DISABLED и отредактируйте переменную $ disabled _ extentions
 *---------------------------------------------------------------------------------- 
-* ПРИМЕЧАНИЕ: имена файлов/каталогов, перечисленные в массиве $ dis _ files, не будут опубликованы в обоих режимах EXTENTION_DISABLED и EXTENTION_ENABLED
+* ПРИМЕЧАНИЕ: имена файлов/каталогов, перечисленные в массиве $ dis _ files, не будут опубликованы в обоих режимах EXTENSION_DISABLED и EXTENSION_ENABLED
  **********************************************************************************/
 //////////// CONSTANTS ////////////////////////////////////////////////////////////
-define('EXTENTION_DISABLED',                                0);                  // для моды: РАЗРЕШЕНЫ все расширения кроме перечисленных в $disabled_extentions
-define('EXTENTION_ENABLED',                                 1);                  // для моды ЗАПРЕЩЕНЫ все расширения кроме перечисленных в  $enabled_extentions
+define('EXTENSION_DISABLED',                                0);                  // для моды: РАЗРЕШЕНЫ все расширения кроме перечисленных в $disabled_extentions
+define('EXTENSION_ENABLED',                                 1);                  // для моды ЗАПРЕЩЕНЫ все расширения кроме перечисленных в  $enabled_extentions
 define('en',                                                 0);
 define('ru',                                                 1);
 define('cz',                                                 2);
@@ -41,8 +41,8 @@ $disabled_extentions = array("exe", "com", "bat", "php", "js", "c", "h", "py", "
 $enabled_extentions  = array("txt", "pdf", "odt", "doc","docx", "mp3","mp4", "ogg", "avi");          // работает в моде ENABLED_EXTENTION добавьте или уберите не нужные к публикации расширения файлов
 $dis_files           = array("index.php", ".", "log.txt");                       // Запрещенные безусловно файлы
 $dir                 = "./";                                                     // По умолчанию сканировать будем текущей каталог.
-$mode                = EXTENTION_DISABLED;                                       // mode 0 разрешены к публикации все расширения, кроме перечисленных  в $disabled_extentions
-//  $mode            = EXTENTION_ENABLED;                                        // mode 1 запрещены все расширения кроме перечисленныъ в $enabled_extentions
+$mode                = EXTENSION_DISABLED;                                       // mode 0 разрешены к публикации все расширения, кроме перечисленных  в $disabled_extentions
+//  $mode            = EXTENSION_ENABLED;                                        // mode 1 запрещены все расширения кроме перечисленныъ в $enabled_extensions
 //*****************    END TO CHANGE    ******************************************/
 
 ///////////// VARIABLES /////////-------------------------------------------------- 
@@ -68,11 +68,11 @@ $mode                = EXTENTION_DISABLED;                                      
     }
     //-----------------------------------------------------------------------------
     function disabled($b) {
-        GLOBAL $dis_files, $disabled_extentions, $debug;
+        GLOBAL $dis_files, $disabled_extensions, $debug;
         if($debug){echo("<pre>" . __LINE__ . ": ");print_r($dis_files);echo("</pre>");}
         $c = false;                                                              // $c возвращяет false что онзначает не запрещено.                            
         if(in_array($b, $dis_files)) return true;                                // in_array(mixed needle, array haystack, [bool strict])         
-        if(in_array(get_extension($b),  $disabled_extentions)) return true;      //substr(string string, int start, [int length]) 
+        if(in_array(get_extension($b),  $disabled_extensions)) return true;      //substr(string string, int start, [int length]) 
         return $c;                                                               //  strrpos($b, '.')
     }
     //-----------------------------------------------------------------------------

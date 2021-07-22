@@ -39,12 +39,12 @@ define('USER_PASSWORD',                              19510104  );              /
 define('LNG_DEFAULT',                                      ru  );              // измените значение языка по-умолчанию на ваш язык
 define('LOG_FILE_DIR',                                      '.');              // по-умолчанию папка для ЛОГфайла - корневая. Измените ее на любое недоступное для публикации место
 define('LOG_FILE_NAME',                               'log.txt');              // по-умолчанию логфайл доступа к библиотеке                    VARS                                                    //
-$disabled_extentions = array("exe", "com", "bat", "php", "js", "c", "h", "py", "java", "ini", "cfg"); // работет в моде 0 DISABLED_EXTENTION  добавьте или удалите ненужные к запрещению публикации расширения
-$enabled_extentions  = array("txt", "pdf", "odt", "doc","docx", "mp3","mp4", "ogg", "avi");           // работает в моде ENABLED_EXTENTION добавьте или уберите не нужные к публикации расширения файлов
+$disabled_extensions = array("exe", "com", "bat", "php", "js", "c", "h", "py", "java", "ini", "cfg"); // работет в моде 0 DISABLED_EXTENTION  добавьте или удалите ненужные к запрещению публикации расширения
+$enabled_extensions  = array("txt", "pdf", "odt", "doc","docx", "mp3","mp4", "ogg", "avi");           // работает в моде ENABLED_EXTENTION добавьте или уберите не нужные к публикации расширения файлов
 $dis_files           = array("index.php", ".", "log.txt");                     // Безусловно запрещены текущий каталог, log.txt и index.php.
 $dir                 = "./";                                                   // По умолчанию сканировать будем текущей каталог.
-$mode                = EXTENTION_DISABLED;                                     // mode 0 разрешены к публикации файлы всех расширений, кроме перечисленных  в $disabled_extentions
-//  $mode            = EXTENTION_ENABLED;                                      // mode 1 запрещены файлы всех расширений кроме перечисленныъ в $enabled_extentions
+$mode                = EXTENSION_DISABLED;                                     // mode 0 разрешены к публикации файлы всех расширений, кроме перечисленных  в $disabled_extensions
+//  $mode            = EXTENSION_ENABLED;                                      // mode 1 запрещены файлы всех расширений кроме перечисленныъ в $enabled_extensions
 //*****************    END TO CHANGE    ***************************************//
 
 ///////////// VARIABLES //////////////////////                                 // 
@@ -91,11 +91,11 @@ $mode                = EXTENTION_DISABLED;                                     /
     }
     //-------------------------------------------------//
     function disabled($b) {
-        GLOBAL $dis_files, $disabled_extentions, $debug;
+        GLOBAL $dis_files, $disabled_extensions, $debug;
         if($debug){echo("<pre>" . __LINE__ . ": ");print_r($dis_files);echo("</pre>");}
         $c = false;                                                             // $c возвращяет false что онзначает не запрещено.                            
         if(in_array($b, $dis_files)) return true;                                      // in_array(mixed needle, array haystack, [bool strict])         
-        if(in_array(get_extension($b),  $disabled_extentions)) return true;            //substr(string string, int start, [int length]) 
+        if(in_array(get_extension($b),  $disabled_extensions)) return true;            //substr(string string, int start, [int length]) 
         return $c;                                                               //  strrpos($b, '.')
     }
     //--------------------------------------------------
