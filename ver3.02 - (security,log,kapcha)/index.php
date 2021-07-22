@@ -1,6 +1,6 @@
 <?php
 /*************************************************************************
-Autopublicator v 3.02 Autentication. Автор Алекс Эйст 2021 aekap ITC Пожалуйста, не удаляйте эту строку комментария при использовании
+Autopublicator v 3.02 Authentication. Автор Алекс Эйст 2021 aekap ITC Пожалуйста, не удаляйте эту строку комментария при использовании
 *
 * Этот сценарий публикует содержимое каталога $dir.
 * Каждый файл/расширение файла или каталог может быть включен или нет, отключен или нет к публикации
@@ -58,7 +58,7 @@ $mode                = EXTENSION_DISABLED;                                     /
     $sub  = '';
     $langs_code   = array('en','ru','cz','cn', 'it', 'fr', 'es', 'de');
     $langs_labels = array('English', 'Русский', 'Český', 'Chines', 'Italian', 'French', 'Espanol', 'Deutch');
-    $warn_message = array('Incorrect username or/and password','Неверный Логин и/или Пароль', 'Nesidi Logon a/nego Heslo') ;  
+    $warn_message = array('Incorrect username or/and kaptcha','Неверный Логин и/или Капча', 'Nesedí Login a/nebo Kaptča') ;  
     $btn_value    = array('Enter', 'Войти','Vhod','Enter','Enter','Enter','Enter','Enter','Enter','Enter','Enter','Enter');
     $lbl_value    = array('Password', 'Пароль', 'Heslo', 'Password', 'Password', 'Password', 'Password', 'Password');
     $label        = array(
