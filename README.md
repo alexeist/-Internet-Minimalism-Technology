@@ -21,3 +21,9 @@ The typing of the second number in this version is similar to versions 1.x.xxx
 
 
 6 Version 3.xxx include the Authentication users and spam-filter procedurs. This option  closes content of the directory from foriners who do not registered at all. See detailed comment in the file (200 rows of php-script)     
+7 Version 4.xxxx (or date created after 2021 october) this version uses only one single file (few hundred rows of code).
+The new in this version:
+7.1 uses recursive scan of all directories and subdirectories. It mean, that you do not need to copy index.php in every directory to scan. All directories are scaned by single file default.php located in the root directory of the site. (For use automatic start default.php you need change the .htaccess resp. see example)
+7.2 Have place expanded the methods of select of type of the site: videoteka, biblioteka, annonce board, eshop, or personal
+7.3 automatisation of the selection type of the content in one directory. You can now public the video in one category with images
+ read the help into the file
