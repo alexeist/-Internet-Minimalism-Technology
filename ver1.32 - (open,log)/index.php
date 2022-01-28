@@ -126,46 +126,7 @@ $mode                = EXTENSION_DISABLED;                                      
 ////////////////// MAIN //////////////////////////////////////    
     $usr = "Guest";
      extract($_REQUEST);
-     if (!strlen($usr)) {
-     $warn_message = array("UNKNOWN GUEST", "НЕИЗВЕСТНЫЙ ПОСЕТИТEЛЬ", "UNKNOWN GUEST", "UNKNOWN GUEST", "UNKNOWN GUEST", "UNKNOWN GUEST", "UNKNOWN GUEST", "UNKNOWN GUEST");
-      $htm = "<html><head>
-              <meta http-equiv=\"refresh\" content=\"4;URL=../\">
-              
-        <style> input{
-                      padding:10px;
-                      margin:10px;
-                      font-family: Arial, Tahoma;
-                      font-size:  xx-large;
-                      size:10;
-                      color:#353;
-                 }
-                 #footer{
-                      padding:0 10px;
-                      text-align:center;
-                 }
-                 .pannel{
-                      margin:20px;
-                      padding-min:10px;
-                      text-align: center;
-                      font-size: xx-large;
-                      border: dotted gray 2px;      
-                  }
-                  .podskazka{
-                      font-style: italic;
-                      color: green;
-                  }
-                  </style> </head><body>
-                   <div class='container'>";
-                   
-     $htm .= "<div class= 'row'>
-                                             <div class='btn-warning'>
-                                               <h4><span style='color:red;'>". $warn_message[$lng] . "</span></h4>
-                                             </div>
-                                           </div>";
-                                           
-        echo($htm );               
-        exit;   
-     }
+    
      /////////////////////////////////////
  log_data($usr);
     $scan=scandir($dir)  ;
