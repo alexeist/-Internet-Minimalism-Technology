@@ -124,7 +124,7 @@ $mode                = EXTENSION_DISABLED;                                      
     }
    
 ////////////////// MAIN //////////////////////////////////////    
-    
+    $usr = "Guest";
      extract($_REQUEST);
      if (!strlen($usr)) {
      $warn_message = array("UNKNOWN GUEST", "НЕИЗВЕСТНЫЙ ПОСЕТИТEЛЬ", "UNKNOWN GUEST", "UNKNOWN GUEST", "UNKNOWN GUEST", "UNKNOWN GUEST", "UNKNOWN GUEST", "UNKNOWN GUEST");
