@@ -7,9 +7,9 @@ The typical starting method for this is BMI internet minimalism technology. BMI 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Here we offer several types of index.php site files, according to the version plan below.
 
-1 Version 1.xxx - Simplest Single File Externet Application (SFEA). This app can scan the current directory and publish its contents with standard clean download links. This version can include up to 999 different graphical and functional views. Variants of this version:
+1 Version 1.xxx - Simplest Single File Externet Application (SFEA). This app can scan the current directory and publish its contents with standard clean download links. This version can include up to 999 different graphical and functional views. Variants of this version: is continued in developing
 
-1.a There is only one functional index.php file on the current host. All other host content is data.
+1.a There is only one functional index.php file on the current host. All other host content is data. 
 1.b Including other external resources available from remote websites (Bootstrap, JQueries and others, e.g. own centralized sources and resources)
 
 2 Version 1.2xx: all functionality and options of version 1.1xxx plus creation of icons for images. This version uses external DB for safe the details of graphycal dezigne. MiniSite adapted for image galleries
@@ -32,3 +32,5 @@ The new in this version:
 
 7.3 automatisation of the selection type of the content in one directory. You can now public the video in one category with images
  read the help into the file
+---------------------------
+Note: all versions is in developing process and is free for use without any limitations (Absolute Free License)
