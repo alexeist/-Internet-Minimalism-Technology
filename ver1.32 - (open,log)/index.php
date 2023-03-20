@@ -37,7 +37,7 @@ define('USER_PASSWORD',                              19510104  );               
 define('LNG_DEFAULT',                                      ru  );                // измените значение языка по-умолчанию на ваш язык
 define('LOG_FILE_DIR',                                      '.');                // по-умолчанию папка для ЛОГфайла - корневая. Измените ее на любое недоступное для публикации место
 define('LOG_FILE_NAME',                               'log.txt');                // по-умолчанию логфайл доступа к библиотеке                    VARS                                                    //
-$disabled_extentions = array("exe", "com", "bat", "php", "js", "c", "h", "py", "java", "ini", "cfg");// работет в моде 0 DISABLED_EXTENTION  добавьте или удалите ненужные к запрещению публикации расширения
+$disabled_extensions = array("exe", "com", "bat", "php", "js", "c", "h", "py", "java", "ini", "cfg");// работет в моде 0 DISABLED_EXTENTION  добавьте или удалите ненужные к запрещению публикации расширения
 $enabled_extentions  = array("txt", "pdf", "odt", "doc","docx", "mp3","mp4", "ogg", "avi");          // работает в моде ENABLED_EXTENTION добавьте или уберите не нужные к публикации расширения файлов
 $dis_files           = array("index.php", ".", "log.txt");                       // Запрещенные безусловно файлы
 $dir                 = "./";                                                     // По умолчанию сканировать будем текущей каталог.
